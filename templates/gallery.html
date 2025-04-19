@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Dinosaur Gallery{% endblock %}
+
+{% block content %}
+<h1>Dinosaur Image Gallery</h1>
+
+<select id="dino-select">
+    <option disabled selected>Select a dinosaur</option>
+</select>
+
+<button id="show-btn">Show</button>
+
+<button id="back-btn" style="display: none;">Return to Gallery</button>
+
+<div id="dino-gallery" class="gallery-container"></div>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% endblock %}
+
+

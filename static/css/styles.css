@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to top ,#f3e40b, #12c23e);
+    background-attachment: fixed; /* Ensures the gradient doesn't scroll */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Bungee Inline", serif;
+    font-weight:lighter;
+    color:#f3e40b;
+    -webkit-text-stroke: 1px black;
+}
+.return{
+    text-align: center;
+    font-size: 30px;
+    background-color: #f3e40b;
+    font-family: "Bungee Inline", serif;
+    font-weight:lighter;
+    color:#ffffff;
+    -webkit-text-stroke: 1px black;
+    padding: 10px;
+    border-radius: 25px;
+    border: 5px solid #73AD21;
+}
+.return:hover {
+    background: #c2b60c;
+}
+@media screen and (max-width: 363px) {
+    .return {
+      font-size: 20px;
+    }
+  }
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+main h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Bungee Inline", serif;
+    font-weight:lighter;
+    color:#f3e40b;
+    -webkit-text-stroke: 1px black;
+}
+.gallery-display {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible columns */
+    gap: 15px; /* Spacing between images */
+    justify-content: center; /* Center the grid */
+    align-items: center;
+    width: 90%; /* Adjust width for better spacing */
+    margin: auto; /* Center the entire grid */
+}
+
+.gallery-display img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Optional: adds shadow */
+}
+.single-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.single-image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
